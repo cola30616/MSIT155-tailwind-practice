@@ -1,2 +1,2 @@
 # 練習檔案
-#下載 https://rose-crab-5af.notion.site/Tailwind-0884e871f6384332aecacb8e10d592b5
+安裝到MVC的檔案 https://rose-crab-5af.notion.site/Tailwind-0884e871f6384332aecacb8e10d592b5
