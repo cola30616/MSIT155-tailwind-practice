@@ -37,7 +37,7 @@ namespace TailwindStarter.Controllers
         {
             return View();
         }
-        public IActionResult BackgroundsShadows()
+        public IActionResult BackgroundShadow()
         {
             return View();
         }
@@ -45,7 +45,7 @@ namespace TailwindStarter.Controllers
         {
             return View();
         }
-        public IActionResult Filters()
+        public IActionResult Filiters()
         {
             return View();
         }
