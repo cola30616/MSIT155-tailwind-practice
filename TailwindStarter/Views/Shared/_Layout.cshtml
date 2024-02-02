@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TailwindStarter</title>
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TailwindStarter.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="flex">
+        <div class="container bg-gray-50 h-full p-6 max-w-lg">
+            <h1 class="text-3xl text-blue-800">Tailwind CSS Sandbox</h1>
+            <ul class="mt-6">
+                <li class="text-lg border border-blue-200 p-2 my-4 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">
+                    <a asp-controller="Home" asp-action="Colors">顏色</a>
+                </li>
+                <li class="text-lg border border-blue-200 p-2 my-4">
+                    <a asp-controller="Home" asp-action="ContainingSpacing">容器間距</a>
+                </li>
+                <li class="text-lg border border-blue-200 p-2 my-4">
+                    <a asp-controller="Home" asp-action="Typography">字體</a>
+                </li>
+                <li class="text-lg border border-blue-200 p-2 my-4">
+                    <a asp-controller="Home" asp-action="Sizing">大小</a>
+                </li>
+                <li class="text-lg border border-blue-200 p-2 my-4">
+                    <a asp-controller="Home" asp-action="LayoutPosition">布局</a>
+                </li>
+                <li class="text-lg border border-blue-200 p-2 my-4">
+                    <a asp-controller="Home" asp-action="BackgroundShadow">陰影</a>
+                </li>
+                <li class="text-lg border border-blue-200 p-2 my-4">
+                    <a asp-controller="Home" asp-action="Borders">框線</a>
+                </li>
+                <li class="text-lg border border-blue-200 p-2 my-4">
+                    <a asp-controller="Home" asp-action="Filiters">濾鏡</a>
+                </li>
+                <li class="text-lg border border-blue-200 p-2 my-4">
+                    <a asp-controller="Home" asp-action="Interactivity">互動</a>
+                </li>
+                <li class="text-lg border border-blue-200 p-2 my-4">
+                    <a asp-controller="Home" asp-action="Breakpoints">螢幕大小設定</a>
+                </li>
+                <li class="text-lg border border-blue-200 p-2 my-4">
+                    <a asp-controller="Home" asp-action="Columns">欄位</a>
+                </li>
+                <li class="text-lg border border-blue-200 p-2 my-4">
+                    <a asp-controller="Home" asp-action="Flex">Flex</a>
+                </li>
+                <li class="text-lg border border-blue-200 p-2 my-4">
+                    <a asp-controller="Home" asp-action="Grid">Gird</a>
+                </li>
+                <li class="text-lg border border-blue-200 p-2 my-4">
+                    <a asp-controller="Home" asp-action="TransformTransition">動畫-TransformTransition</a>
+                </li>
+                <li class="text-lg border border-blue-200 p-2 my-4">
+                    <a asp-controller="Home" asp-action="Animation">動畫</a>
+                </li>
+                <li class="text-lg border border-blue-200 p-2 my-4">
+                    <a asp-controller="Home" asp-action="Colors">客製化</a>
+                </li>
+                <li class="text-lg border border-blue-200 p-2 my-4">
+                    <a asp-controller="Home" asp-action="Customization">黑暗模式</a>
+                </li>             
+            </ul>
+        </div>
+        <div class="container">
+            <main class="ml-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @* <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
